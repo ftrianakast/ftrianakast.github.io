@@ -21,21 +21,21 @@ const { title, description = "Staff Software Engineer, AI enthusiast, and Colomb
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-50 text-slate-900 min-h-screen">
-  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200">
+<body class="min-h-screen">
+  <nav class="fixed top-0 w-full parchment backdrop-blur-md z-50 border-b-2 border-[--color-gold]" style="border-bottom-color: var(--color-gold);">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
-        <a href="/" class="font-macondo text-2xl text-slate-900 hover:text-amber-600 transition-colors">
+        <a href="/" class="font-macondo text-2xl text-ink hover:text-[--color-gold] transition-colors" style="color: var(--color-ink);">
           FT
         </a>
 
         <div class="hidden md:flex space-x-8">
-          <a href="/" class="text-slate-600 hover:text-amber-600 transition-colors">Home</a>
-          <a href="/about" class="text-slate-600 hover:text-amber-600 transition-colors">About</a>
-          <a href="/work" class="text-slate-600 hover:text-amber-600 transition-colors">Work</a>
-          <a href="/music" class="text-slate-600 hover:text-amber-600 transition-colors">Music</a>
-          <a href="/blog" class="text-slate-600 hover:text-amber-600 transition-colors">Blog</a>
-          <a href="/contact" class="text-slate-600 hover:text-amber-600 transition-colors">Contact</a>
+          <a href="/" class="text-ink-light hover:text-[--color-gold] transition-colors" style="color: var(--color-ink-light);">Home</a>
+          <a href="/about" class="text-ink-light hover:text-[--color-gold] transition-colors" style="color: var(--color-ink-light);">About</a>
+          <a href="/work" class="text-ink-light hover:text-[--color-gold] transition-colors" style="color: var(--color-ink-light);">Work</a>
+          <a href="/music" class="text-ink-light hover:text-[--color-gold] transition-colors" style="color: var(--color-ink-light);">Music</a>
+          <a href="/blog" class="text-ink-light hover:text-[--color-gold] transition-colors" style="color: var(--color-ink-light);">Blog</a>
+          <a href="/contact" class="text-ink-light hover:text-[--color-gold] transition-colors" style="color: var(--color-ink-light);">Contact</a>
         </div>
 
         <!-- Mobile menu button -->
@@ -48,12 +48,12 @@ const { title, description = "Staff Software Engineer, AI enthusiast, and Colomb
 
       <!-- Mobile menu -->
       <div id="mobile-menu" class="hidden md:hidden pb-4">
-        <a href="/" class="block py-2 text-slate-600 hover:text-amber-600">Home</a>
-        <a href="/about" class="block py-2 text-slate-600 hover:text-amber-600">About</a>
-        <a href="/work" class="block py-2 text-slate-600 hover:text-amber-600">Work</a>
-        <a href="/music" class="block py-2 text-slate-600 hover:text-amber-600">Music</a>
-        <a href="/blog" class="block py-2 text-slate-600 hover:text-amber-600">Blog</a>
-        <a href="/contact" class="block py-2 text-slate-600 hover:text-amber-600">Contact</a>
+        <a href="/" class="block py-2 text-ink-light hover:text-[--color-gold]" style="color: var(--color-ink-light);">Home</a>
+        <a href="/about" class="block py-2 text-ink-light hover:text-[--color-gold]" style="color: var(--color-ink-light);">About</a>
+        <a href="/work" class="block py-2 text-ink-light hover:text-[--color-gold]" style="color: var(--color-ink-light);">Work</a>
+        <a href="/music" class="block py-2 text-ink-light hover:text-[--color-gold]" style="color: var(--color-ink-light);">Music</a>
+        <a href="/blog" class="block py-2 text-ink-light hover:text-[--color-gold]" style="color: var(--color-ink-light);">Blog</a>
+        <a href="/contact" class="block py-2 text-ink-light hover:text-[--color-gold]" style="color: var(--color-ink-light);">Contact</a>
       </div>
     </div>
   </nav>
@@ -62,32 +62,33 @@ const { title, description = "Staff Software Engineer, AI enthusiast, and Colomb
     <slot />
   </main>
 
-  <footer class="bg-slate-900 text-slate-300 mt-20">
+  <footer class="mt-20 border-t-2" style="background-color: var(--color-ink); border-top-color: var(--color-gold); color: var(--color-parchment);">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 class="font-macondo text-xl text-white mb-4">Felipe Triana</h3>
+          <h3 class="font-macondo text-xl mb-4" style="color: var(--color-gold);">Felipe Triana</h3>
           <p class="text-sm">Staff Software Engineer & Musician</p>
           <p class="text-sm">Berlin, Germany</p>
         </div>
         <div>
-          <h3 class="font-bold text-white mb-4">Quick Links</h3>
+          <h3 class="font-macondo mb-4" style="color: var(--color-gold);">Quick Links</h3>
           <div class="flex flex-col space-y-2 text-sm">
-            <a href="/about" class="hover:text-amber-500 transition-colors">About</a>
-            <a href="/work" class="hover:text-amber-500 transition-colors">Work</a>
-            <a href="/blog" class="hover:text-amber-500 transition-colors">Blog</a>
+            <a href="/about" class="hover:text-[--color-gold] transition-colors">About</a>
+            <a href="/work" class="hover:text-[--color-gold] transition-colors">Work</a>
+            <a href="/blog" class="hover:text-[--color-gold] transition-colors">Blog</a>
           </div>
         </div>
         <div>
-          <h3 class="font-bold text-white mb-4">Connect</h3>
+          <h3 class="font-macondo mb-4" style="color: var(--color-gold);">Connect</h3>
           <div class="flex flex-col space-y-2 text-sm">
-            <a href="https://github.com/ftrianakast" target="_blank" class="hover:text-amber-500 transition-colors">GitHub</a>
-            <a href="https://linkedin.com/in/ftrianakast" target="_blank" class="hover:text-amber-500 transition-colors">LinkedIn</a>
-            <a href="mailto:ftrianakast@gmail.com" class="hover:text-amber-500 transition-colors">Email</a>
+            <a href="https://github.com/ftrianakast" target="_blank" class="hover:text-[--color-gold] transition-colors">GitHub</a>
+            <a href="https://linkedin.com/in/ftrianakast" target="_blank" class="hover:text-[--color-gold] transition-colors">LinkedIn</a>
+            <a href="mailto:ftrianakast@gmail.com" class="hover:text-[--color-gold] transition-colors">Email</a>
           </div>
         </div>
       </div>
-      <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm">
+      <div class="ornamental-divider mt-8 mb-8"></div>
+      <div class="text-center text-sm">
         <p>&copy; {new Date().getFullYear()} Felipe Triana. Built with Astro & Tailwind CSS.</p>
       </div>
     </div>
