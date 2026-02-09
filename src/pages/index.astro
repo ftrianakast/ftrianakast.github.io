@@ -63,34 +63,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2 class="text-4xl md:text-5xl font-macondo text-center mb-4" style="color: var(--color-ink);">What I Do</h2>
       <div class="ornamental-divider mb-16 max-w-md mx-auto"></div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="parchment p-6 border-2 rounded-lg transition-all hover:shadow-lg" style="border-color: var(--color-gold);">
-          <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: rgba(201, 169, 97, 0.2);">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--color-gold);">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-macondo mb-2" style="color: var(--color-ink);">Software Engineering</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="text-center">
+          <svg class="w-12 h-12 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--color-gold);">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+          </svg>
+          <h3 class="text-xl font-macondo mb-3" style="color: var(--color-gold);">Software Engineering</h3>
           <p style="color: var(--color-ink-light);">Building scalable distributed systems at eBay, leveraging AI tools for 75%+ of my workflow. Expert in Java, Scala, and microservices architecture.</p>
         </div>
 
-        <div class="parchment p-6 border-2 rounded-lg transition-all hover:shadow-lg" style="border-color: var(--color-gold);">
-          <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: rgba(201, 169, 97, 0.2);">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--color-gold);">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-macondo mb-2" style="color: var(--color-ink);">AI Integration</h3>
+        <div class="text-center">
+          <svg class="w-12 h-12 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--color-gold);">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+          </svg>
+          <h3 class="text-xl font-macondo mb-3" style="color: var(--color-gold);">AI Integration</h3>
           <p style="color: var(--color-ink-light);">Specialized in LLM applications, prompt engineering, and AI-augmented development. Using Claude, ChatGPT, and GitHub Copilot to maximize productivity.</p>
         </div>
 
-        <div class="parchment p-6 border-2 rounded-lg transition-all hover:shadow-lg" style="border-color: var(--color-gold);">
-          <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background-color: rgba(201, 169, 97, 0.2);">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--color-gold);">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
-            </svg>
-          </div>
-          <h3 class="text-xl font-macondo mb-2" style="color: var(--color-ink);">Colombian Music</h3>
+        <div class="text-center">
+          <svg class="w-12 h-12 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--color-gold);">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+          </svg>
+          <h3 class="text-xl font-macondo mb-3" style="color: var(--color-gold);">Colombian Music</h3>
           <p style="color: var(--color-ink-light);">Founder of Cumbe, a Colombian traditional music group in Berlin. Playing gaita, bandola, and guitar to bridge Colombian heritage with Berlin's music scene.</p>
         </div>
       </div>
@@ -113,7 +107,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </section>
 
   <!-- CTA Section -->
-  <section class="py-20 relative" style="background-color: var(--color-ink);">
+  <section class="pt-20 pb-16 relative" style="background-color: var(--color-ink);">
     <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, var(--color-gold) 0, var(--color-gold) 1px, transparent 0, transparent 50%); background-size: 10px 10px;"></div>
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
       <h2 class="text-4xl md:text-5xl font-macondo mb-4" style="color: var(--color-gold);">Let's Work Together</h2>
