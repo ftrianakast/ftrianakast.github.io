@@ -110,3 +110,85 @@ body {
   color: var(--color-gold);
   font-size: 14px;
 }
+
+/* Hover effects for links */
+a:hover {
+  transition: all 0.3s ease;
+}
+
+/* Navigation link hover effects */
+nav a:hover {
+  color: var(--color-gold);
+  text-shadow: 0 0 8px rgba(201, 169, 97, 0.3);
+}
+
+/* Button hover effects */
+.btn-primary {
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.btn-primary:hover {
+  background-color: #d4b36a;
+  box-shadow:
+    0 4px 8px rgba(61, 40, 23, 0.2),
+    0 0 12px rgba(201, 169, 97, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow:
+    0 2px 4px rgba(61, 40, 23, 0.2),
+    0 0 8px rgba(201, 169, 97, 0.3);
+}
+
+/* Icon hover effects */
+svg:hover {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 4px rgba(201, 169, 97, 0.5));
+}
+
+/* Link underline effect */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 50%;
+  background-color: var(--color-gold);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 8px 16px rgba(61, 40, 23, 0.15),
+    0 0 16px rgba(201, 169, 97, 0.2);
+}
+
+/* Social icon hover */
+.social-icon:hover {
+  color: var(--color-gold);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
