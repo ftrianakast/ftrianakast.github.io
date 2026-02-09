@@ -4,25 +4,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout title="Blog - Felipe Triana">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-    <h1 class="text-4xl md:text-5xl font-macondo mb-4">Blog</h1>
-    <p class="text-xl text-slate-600 mb-16">Thoughts on AI, distributed systems, and functional programming</p>
+    <h1 class="text-4xl md:text-5xl font-macondo mb-4" style="color: var(--color-ink);">Blog</h1>
+    <p class="text-xl mb-16" style="color: var(--color-ink-light);">Thoughts on AI, distributed systems, and functional programming</p>
 
     <!-- Coming Soon -->
-    <div class="text-center py-20">
-      <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
-        <svg class="w-10 h-10 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
-        </svg>
-      </div>
-      <h2 class="text-2xl font-bold mb-4">Blog posts coming soon!</h2>
-      <p class="text-slate-600 mb-8 max-w-2xl mx-auto">
+    <div class="text-center py-12">
+      <svg class="w-16 h-16 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--color-gold);">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+      </svg>
+      <h2 class="text-2xl font-macondo mb-4" style="color: var(--color-gold);">Blog posts coming soon!</h2>
+      <p class="mb-12 max-w-2xl mx-auto" style="color: var(--color-ink-light);">
         I'm working on sharing insights about AI/ML integration, distributed systems architecture,
         functional programming patterns, and my experiences building systems at scale.
       </p>
 
-      <div class="bg-slate-50 border-2 border-slate-200 rounded-lg p-8 max-w-md mx-auto">
-        <h3 class="font-bold mb-4">Topics I'll be covering:</h3>
-        <ul class="text-left space-y-2 text-slate-600">
+      <div class="ornamental-divider mb-12 max-w-md mx-auto"></div>
+
+      <div class="max-w-md mx-auto">
+        <h3 class="font-macondo mb-6" style="color: var(--color-ink);">Topics I'll be covering:</h3>
+        <ul class="text-left space-y-3" style="color: var(--color-ink-light);">
           <li>✨ AI-augmented development workflows</li>
           <li>🏗️ Distributed system patterns and anti-patterns</li>
           <li>🔧 Practical functional programming in Scala/Java</li>
