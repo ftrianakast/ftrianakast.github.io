@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+  --font-family-macondo: 'Macondo', cursive;
+}
+
+.font-macondo {
+  font-family: var(--font-family-macondo);
+}
