@@ -49,3 +49,14 @@ export function getLocalizedPath(path: string, lang: string): string {
 
   return `/${lang}${path}`;
 }
+
+export function getCvUrl(lang: string): string {
+  const langMapping: Record<string, string> = {
+    'en': 'english',
+    'es': 'español',
+    'de': 'deutsch'
+  };
+
+  const cvLang = langMapping[lang] || 'english';
+  return `https://raw.githubusercontent.com/ftrianakast/CV/main/${cvLang}/cv.pdf`;
+}

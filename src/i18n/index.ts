@@ -1,1 +1,1 @@
-export { t, getLangFromUrl, getLocalizedPath, languages, defaultLang } from './utils';
+export { t, getLangFromUrl, getLocalizedPath, getCvUrl, languages, defaultLang } from './utils';
