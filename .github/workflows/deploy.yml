@@ -27,12 +27,10 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: |
-          npm cache clean --force
-          npm install --legacy-peer-deps
+        run: npm ci --legacy-peer-deps
 
       - name: Build Astro site
-        run: npm run build
+        run: npx astro build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
