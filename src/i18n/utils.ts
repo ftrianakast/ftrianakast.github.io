@@ -58,5 +58,5 @@ export function getCvUrl(lang: string): string {
   };
 
   const cvLang = langMapping[lang] || 'english';
-  return `https://raw.githubusercontent.com/ftrianakast/CV/main/${cvLang}/cv.pdf`;
+  return `https://raw.githubusercontent.com/ftrianakast/CV/master/${cvLang}/cv.pdf`;
 }
