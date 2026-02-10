@@ -33,8 +33,7 @@ p, li, div {
 .parchment {
   background: linear-gradient(
     to bottom,
-    #f9f3e6 0%,
-    #f4e8d0 10%,
+    #f4e8d0 0%,
     #f4e8d0 90%,
     #e8d7b8 100%
   );

@@ -1,6 +1,6 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { t, getLangFromUrl, getLocalizedPath } from '../i18n';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { t, getLangFromUrl, getLocalizedPath } from '../../i18n';
 
 const currentLang = getLangFromUrl(Astro.url);
 ---
@@ -31,13 +31,13 @@ const currentLang = getLangFromUrl(Astro.url);
 
       <!-- Blog Post Reference -->
       <div class="mb-12 pl-4" style="border-left: 3px solid var(--color-gold);">
-        <p class="text-sm font-macondo mb-2" style="color: var(--color-gold);">Del blog</p>
-        <a href="/blog/mi-aldea" class="block group">
+        <p class="text-sm font-macondo mb-2" style="color: var(--color-gold);">Vom Blog</p>
+        <a href="/de/blog/mi-aldea" class="block group">
           <h3 class="font-macondo text-lg mb-2 group-hover:text-[--color-gold] transition-colors" style="color: var(--color-ink);">
             Mi aldea no me olvida
           </h3>
           <p class="text-sm leading-relaxed" style="color: var(--color-ink-light);">
-            Reflexiones sobre la música tradicional colombiana y sus raíces en los Montes de María, los Llanos Orientales y más allá →
+            Gedanken über traditionelle kolumbianische Musik und ihre Wurzeln in den Montes de María, den Östlichen Ebenen und darüber hinaus →
           </p>
         </a>
       </div>

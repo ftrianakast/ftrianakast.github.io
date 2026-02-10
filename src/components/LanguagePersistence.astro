@@ -1,0 +1,23 @@
+---
+import { languages, getLangFromUrl, getLocalizedPath, defaultLang } from '../i18n';
+
+const currentLang = getLangFromUrl(Astro.url);
+const currentPath = Astro.url.pathname.replace(new RegExp(`^/(${Object.keys(languages).join('|')})`), '') || '/';
+---
+
+<script define:vars={{ currentLang, currentPath, defaultLang, availableLangs: Object.keys(languages) }}>
+  if (typeof window !== 'undefined') {
+    const preferredLang = localStorage.getItem('preferredLanguage');
+
+    if (preferredLang && preferredLang !== currentLang && availableLangs.includes(preferredLang)) {
+      let newPath;
+      if (preferredLang === defaultLang) {
+        newPath = currentPath;
+      } else {
+        newPath = preferredLang === defaultLang ? currentPath : `/${preferredLang}${currentPath}`;
+      }
+
+      window.location.href = newPath;
+    }
+  }
+</script>

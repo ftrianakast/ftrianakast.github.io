@@ -1,6 +1,6 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { t, getLangFromUrl } from '../i18n';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { t, getLangFromUrl } from '../../i18n';
 import { getCollection } from 'astro:content';
 
 const currentLang = getLangFromUrl(Astro.url);
@@ -39,7 +39,7 @@ const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.
                 })}
               </time>
               <h2 class="text-3xl font-macondo mt-2 mb-3">
-                <a href={`/blog/${baseSlug}`} class="hover:text-[--color-gold] transition-colors" style="color: var(--color-ink);">
+                <a href={`/de/blog/${baseSlug}`} class="hover:text-[--color-gold] transition-colors" style="color: var(--color-ink);">
                   {post.data.title}
                 </a>
               </h2>

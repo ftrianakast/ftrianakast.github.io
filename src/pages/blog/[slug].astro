@@ -1,0 +1,251 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { t, getLangFromUrl } from '../../i18n';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog', ({ data }) => {
+    return data.lang === 'es';
+  });
+  return blogEntries.map(entry => {
+    // Remove language prefix from slug (e.g., "es/mi-aldea" -> "mi-aldea")
+    const baseSlug = entry.slug.replace(/^(es|en|de)\//, '');
+    return {
+      params: { slug: baseSlug },
+      props: { entry },
+    };
+  });
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const currentLang = getLangFromUrl(Astro.url);
+
+// Get base slug for shared comments across languages
+const baseSlug = entry.slug.replace(/^(es|en|de)\//, '');
+
+// Extract language from current URL path
+const pathParts = Astro.url.pathname.split('/').filter(Boolean);
+const urlLang = pathParts[0] === 'blog' ? 'es' : (pathParts[0] === 'en' || pathParts[0] === 'de') ? pathParts[0] : 'es';
+
+// Redirect if language doesn't match
+if (entry.data.lang !== urlLang) {
+  const redirectPath = urlLang === 'es' ? `/blog/${entry.slug}` : `/${urlLang}/blog/${entry.slug}`;
+  return Astro.redirect(redirectPath);
+}
+---
+
+<BaseLayout title={`${entry.data.title} - Felipe Triana Castañeda`} description={entry.data.description}>
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <header class="mb-12">
+      <time class="text-sm" style="color: var(--color-ink-light);" datetime={entry.data.pubDate.toISOString()}>
+        {entry.data.pubDate.toLocaleDateString(entry.data.lang, {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        })}
+      </time>
+      <h1 class="text-4xl md:text-5xl font-macondo mt-4 mb-6" style="color: var(--color-ink);">
+        {entry.data.title}
+      </h1>
+      <div class="ornamental-divider mb-8"></div>
+    </header>
+
+    <div class="prose prose-lg max-w-none blog-content">
+      <Content />
+    </div>
+
+    <!-- Disqus Comments -->
+    <div class="mt-16 comments-section">
+      <div class="ornamental-divider mb-10"></div>
+
+      <!-- Decorative Header -->
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-macondo" style="color: var(--color-gold);">
+          {t(currentLang, 'blog.comments')}
+        </h2>
+      </div>
+
+      <!-- Comments Container with Medieval Styling -->
+      <div class="medieval-comments-wrapper">
+        <div id="disqus_thread"></div>
+      </div>
+    </div>
+
+    <div class="ornamental-divider mt-12 mb-8"></div>
+
+    <footer class="text-center">
+      <a
+        href={`/${entry.data.lang === 'es' ? '' : entry.data.lang + '/'}blog`}
+        class="inline-flex items-center gap-2 font-medium hover:text-[--color-gold] transition-colors"
+        style="color: var(--color-ink);"
+      >
+        ← {entry.data.lang === 'es' ? 'Volver al blog' : entry.data.lang === 'en' ? 'Back to blog' : 'Zurück zum Blog'}
+      </a>
+    </footer>
+
+      <script is:inline>
+        var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = 'blog-{baseSlug}'; // Shared identifier across all languages
+          this.language = '{entry.data.lang}';
+
+          // Debug: Log the identifier
+          console.log('Disqus identifier:', this.page.identifier);
+          console.log('Language:', this.language);
+
+          // Customize Disqus colors to match medieval theme
+          this.callbacks = {
+            onReady: [function() {
+              // Add custom styling class to body when Disqus loads
+              setTimeout(function() {
+                var style = document.createElement('style');
+                style.textContent = `
+                  #disqus_thread {
+                    font-family: 'Lora', serif !important;
+                  }
+                `;
+                document.head.appendChild(style);
+              }, 100);
+            }]
+          };
+        };
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://http-localhost-4321-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>
+        <div style="text-align: center; padding: 2rem; color: var(--color-ink-light);">
+          Please enable JavaScript to view the comments.
+        </div>
+      </noscript>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .blog-content {
+    color: var(--color-ink-light);
+    line-height: 1.8;
+  }
+
+  .blog-content :global(p) {
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-content :global(p:first-of-type) {
+    font-size: 1.125rem;
+  }
+
+  .blog-content :global(strong) {
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+
+  .blog-content :global(em) {
+    font-style: italic;
+  }
+
+  .blog-content :global(h2) {
+    font-family: var(--font-family-macondo);
+    color: var(--color-gold);
+    font-size: 1.875rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .blog-content :global(h3) {
+    font-family: var(--font-family-macondo);
+    color: var(--color-gold);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-content :global(ul),
+  .blog-content :global(ol) {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .blog-content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-content :global(blockquote) {
+    border-left: 4px solid var(--color-gold);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--color-ink);
+  }
+
+  .blog-content :global(code) {
+    background-color: var(--color-parchment-dark);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+  }
+
+  .blog-content :global(pre) {
+    background-color: var(--color-ink);
+    color: var(--color-parchment);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+
+  .blog-content :global(pre code) {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .blog-content :global(a) {
+    color: var(--color-gold);
+    text-decoration: underline;
+    transition: all 0.3s ease;
+  }
+
+  .blog-content :global(a:hover) {
+    color: var(--color-ink);
+  }
+
+  /* Medieval Comments Styling */
+  .comments-section {
+    position: relative;
+  }
+
+  .medieval-flourish {
+    color: var(--color-gold);
+    font-size: 2rem;
+    opacity: 0.7;
+  }
+
+  .medieval-comments-wrapper {
+    background: transparent;
+    padding: 2rem 0;
+    position: relative;
+  }
+
+  /* Disqus Custom Styling Attempts */
+  .medieval-comments-wrapper :global(#disqus_thread) {
+    color: var(--color-ink-light);
+  }
+
+  .medieval-comments-wrapper :global(#disqus_thread a) {
+    color: var(--color-gold) !important;
+  }
+
+  .medieval-comments-wrapper :global(#disqus_thread a:hover) {
+    color: var(--color-ink) !important;
+  }
+
+  /* Style the Disqus iframe when it loads */
+  .medieval-comments-wrapper :global(iframe) {
+    border-radius: 0.25rem;
+  }
+</style>

@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "defaultDescription": "Staff Software Engineer, AI enthusiast, and Colombian musician based in Berlin"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "work": "Work",
+    "music": "Music",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "footer": {
+    "title": "Felipe Triana Castañeda",
+    "subtitle": "Staff Software Engineer & Musician",
+    "location": "Berlin, Germany",
+    "quickLinks": "Quick Links",
+    "connect": "Connect"
+  },
+  "home": {
+    "title": "Felipe Triana Castañeda - Staff Software Engineer & Musician",
+    "hero": {
+      "name": "Felipe Triana Castañeda",
+      "title": "Staff Software Engineer",
+      "tagline": "Building distributed systems with AI · Playing Colombian music · Based in Berlin",
+      "viewWork": "View My Work",
+      "getInTouch": "Get In Touch",
+      "downloadCV": "Download CV"
+    },
+    "highlights": {
+      "title": "What I Do",
+      "engineering": {
+        "title": "Software Engineering",
+        "description": "Building scalable distributed systems at eBay, leveraging AI tools for 75%+ of my workflow. Expert in Java, Scala, and microservices architecture."
+      },
+      "ai": {
+        "title": "AI Integration",
+        "description": "Specialized in LLM applications, prompt engineering, and AI-augmented development. Using Claude, ChatGPT, and GitHub Copilot to maximize productivity."
+      },
+      "music": {
+        "title": "Colombian Music",
+        "description": "Founder of Cumbé, a traditional gaita music group from the Montes de María in Berlin. Playing gaita and percussion to bridge Colombian heritage with Berlin's music scene."
+      }
+    },
+    "cta": {
+      "title": "Let's Work Together",
+      "description": "I'm open to remote opportunities building AI-integrated systems and scaling distributed architectures.",
+      "button": "Get In Touch"
+    }
+  },
+  "about": {
+    "title": "About - Felipe Triana Castañeda",
+    "heading": "About Me",
+    "journey": {
+      "title": "The Journey",
+      "p1": "I'm Felipe Triana Castañeda, a Colombian software engineer who found a home in Berlin. My journey in tech started in Bogotá, where I earned my Systems and Computing Engineering degree from Universidad de los Andes with a thesis on AI-powered skin disease detection using ontologies.",
+      "p2": "Over the past 12+ years, I've built distributed systems serving hundreds of millions of users at companies like eBay, Zalando, and Prodigious. What drives me is the intersection of scale, architecture, and innovation—especially now with AI transforming how we build software.",
+      "p3": "Today, I'm a Staff Software Engineer at eBay, where I lead technical projects from design to delivery and extensively leverage AI tools (Claude, ChatGPT, GitHub Copilot) for 75%+ of my daily workflow. I'm passionate about functional programming, system scalability, and making AI work in production."
+    },
+    "beyond": {
+      "title": "Beyond the Code",
+      "p1": "Music is my second language. In 2022, I founded <strong>Cumbé</strong>, a traditional gaita music ensemble from the Montes de María in Berlin. We play gaita (Colombian flute) and percussion, bridging my Colombian heritage with Berlin's diverse music scene. I also study bandola llanera, the string instrument from the Eastern Plains used to play joropo."
+    },
+    "values": {
+      "title": "What I Value",
+      "learning": "<strong>Learning continuously</strong> - From quantum computing workshops to financial markets courses",
+      "scale": "<strong>Building for scale</strong> - Systems that serve millions while staying maintainable",
+      "ai": "<strong>AI augmentation</strong> - Using LLMs as thought partners, not just autocomplete",
+      "bridges": "<strong>Cultural bridges</strong> - Bringing Colombian music to Berlin, bringing Berlin engineering to global teams",
+      "excellence": "<strong>Pragmatic excellence</strong> - Ship working solutions, then iterate toward elegance"
+    },
+    "currently": {
+      "title": "Currently",
+      "ebay": "Leading technical projects at eBay (friction reduction, fraud mitigation, global messaging)",
+      "llm": "Exploring LLM integration patterns and AI-augmented development workflows",
+      "music": "Performing with Cumbé and studying bandola and music harmony",
+      "german": "Improving my German (currently intermediate level)",
+      "reading": "Reading about distributed systems, prompt engineering, and quantum computing"
+    }
+  },
+  "work": {
+    "title": "Work Experience - Felipe Triana Castañeda",
+    "heading": "Work Experience",
+    "subtitle": "12+ years building distributed systems at scale",
+    "downloadCV": "Download CV",
+    "ebayStaff": {
+      "dates": "Mar 2022 - Present",
+      "title": "Staff Software Engineer",
+      "company": "eBay · Berlin, Germany",
+      "responsibilities": [
+        "Lead technical ownership of projects from design through delivery for global eBay platform serving hundreds of millions of users",
+        "Led international friction reduction initiatives including Request Shipping, Educational Banner for sellers, Freight Forwarding, and Contact Seller features",
+        "Serve as domain lead for 6 inherited AU applications, managing SLOs, production errors, and system maintenance",
+        "Extensively leverage AI tools (Claude, ChatGPT, GitHub Copilot) for code generation, architecture discussions, and code reviews (75%+ AI-augmented workflow)",
+        "Mentor backend engineers on technical skills and best practices"
+      ]
+    },
+    "ebaySenior": {
+      "dates": "Nov 2018 - Mar 2022",
+      "title": "Senior Software Engineer",
+      "company": "eBay · Berlin, Germany",
+      "responsibilities": [
+        "Led technical design and implementation of fraud mitigation system for Rewards platform, protecting millions of users across Europe",
+        "Co-led development of Rewards Admin Tool, enabling scalable campaign management across eBay Punkte, seller rewards, and buyer rewards programs",
+        "Built and maintained microservices for European Rewards platform using Scala and Java",
+        "Contributed to global eBay initiatives including payments, shopping cart, and checkout experiences"
+      ]
+    },
+    "zalando": {
+      "dates": "May 2017 - Nov 2018",
+      "title": "Software Engineer",
+      "company": "Zalando · Berlin, Germany",
+      "responsibilities": [
+        "Backend engineer on Collabary, a fast-scaling intrapreneur project",
+        "Designed pragmatic systems and processes for rapid growth",
+        "Built microservices using Java 8, Spring Boot, NodeJS, and ExpressJS",
+        "Deployed services on AWS infrastructure using Docker"
+      ]
+    },
+    "prodigious": {
+      "dates": "Mar 2015 - Apr 2017",
+      "title": "Senior Software Engineer",
+      "company": "Prodigious Latin America · Bogotá, Colombia",
+      "responsibilities": [
+        "Backend engineer and technical referent for Hewlett Packard, USANA, and Renault-Nissan projects",
+        "Developed enterprise solutions using Java, Adobe Experience Manager, and Apache Sling",
+        "Collaborated with large international teams across US and Latin America"
+      ]
+    },
+    "aentropico": {
+      "dates": "Aug 2013 - Dec 2014",
+      "title": "CTO & Full Stack Developer",
+      "company": "Aentropico SAS · Bogotá, Colombia",
+      "responsibilities": [
+        "Technical leader and architect for predictive analytics platform using machine learning",
+        "Built backend systems using Scala, Akka, Spark, NodeJS, and R",
+        "Designed REST APIs, NoSQL databases (MongoDB), and frontend applications",
+        "Managed infrastructure on AWS, Docker, and Heroku with OAuth 2.0 security"
+      ]
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "ai": {
+        "title": "AI & ML",
+        "description": "LLM integration, prompt engineering, AI-augmented development with Claude, ChatGPT, GitHub Copilot"
+      },
+      "languages": {
+        "title": "Languages",
+        "description": "Java (expert), Scala (expert), Kotlin, JavaScript, TypeScript"
+      },
+      "frameworks": {
+        "title": "Frameworks",
+        "description": "Spring Boot, ZIO, Scalaz, Vavr, NodeJS, ExpressJS"
+      },
+      "apis": {
+        "title": "APIs",
+        "description": "REST, GraphQL, SOAP"
+      },
+      "databases": {
+        "title": "Databases",
+        "description": "Oracle, MongoDB, PostgreSQL, MySQL, Redis, NuDB"
+      },
+      "infrastructure": {
+        "title": "Infrastructure",
+        "description": "Kubernetes, Docker, AWS, Kafka, event-driven architectures"
+      }
+    }
+  },
+  "music": {
+    "title": "Music - Felipe Triana Castañeda",
+    "heading": "Music",
+    "subtitle": "Bridging Colombian heritage with Berlin's music scene",
+    "cumbe": {
+      "title": "Cumbé",
+      "subtitle": "Colombian Traditional Music Ensemble · Berlin, Germany",
+      "description": "Founded in 2022, Cumbé is my passion project that brings the rich sounds of traditional gaita music from the Montes de María to Berlin's diverse cultural landscape. We explore the rhythms and melodies of Colombia's Caribbean coast, with gaita hembra, gaita macho, llamador, tambor alegre, and tambora."
+    },
+    "instruments": {
+      "gaita": {
+        "title": "Gaita",
+        "description": "Traditional Colombian flute from the coastal regions. A beautiful wind instrument with a haunting, melodic quality that's central to cumbia and other Colombian rhythms."
+      },
+      "bandola": {
+        "title": "Bandola Llanera",
+        "description": "String instrument from the Eastern Plains (Llanos Orientales). Part of the lute family, it produces bright, resonant tones perfect for joropo. Currently studying this beautiful instrument of llanera music."
+      },
+      "percussion": {
+        "title": "Percussion",
+        "description": "Llamador, tambor alegre, and tambora are fundamental to gaita music. These drums of African origin provide the rhythm and energy for cumbias, porros, and puyas from the Montes de María."
+      },
+      "harmony": {
+        "title": "Music Harmony",
+        "description": "Currently studying music theory and harmony to deepen my understanding of composition, arrangement, and the theoretical foundations of traditional Colombian music."
+      }
+    },
+    "cta": {
+      "title": "Interested in a collaboration?",
+      "description": "Whether you're organizing a cultural event, looking for Colombian music in Berlin, or just want to chat about music, I'd love to hear from you.",
+      "button": "Get In Touch"
+    }
+  },
+  "contact": {
+    "title": "Contact - Felipe Triana Castañeda",
+    "heading": "Let's Connect",
+    "subtitle": "I'm always open to interesting conversations and opportunities",
+    "downloadCV": "Download CV",
+    "methods": {
+      "email": {
+        "title": "Email",
+        "value": "ftrianakast@gmail.com",
+        "description": "For general inquiries and opportunities"
+      },
+      "github": {
+        "title": "GitHub",
+        "value": "@ftrianakast",
+        "description": "Check out my open source work"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "value": "@ftrianakast",
+        "description": "Professional network and updates"
+      },
+      "location": {
+        "title": "Location",
+        "value": "Berlin, Germany",
+        "description": "Open to remote opportunities globally"
+      }
+    },
+    "lookingFor": {
+      "title": "What I'm Looking For",
+      "remote": {
+        "title": "Remote Opportunities",
+        "description": "Staff/Principal engineer roles building AI-integrated systems and distributed architectures"
+      },
+      "discussions": {
+        "title": "Technical Discussions",
+        "description": "Architecture, AI/ML integration, functional programming, scaling systems"
+      },
+      "speaking": {
+        "title": "Speaking & Workshops",
+        "description": "Conferences, meetups, and educational events about distributed systems and AI"
+      },
+      "collaborations": {
+        "title": "Music Collaborations",
+        "description": "Colombian music events, cultural exchanges, and performances in Berlin"
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog - Felipe Triana Castañeda",
+    "heading": "Blog",
+    "subtitle": "Thoughts on AI, distributed systems, functional programming, and traditional Colombian music",
+    "readMore": "Read more",
+    "noPosts": "No posts yet.",
+    "comments": "Comments"
+  }
+}

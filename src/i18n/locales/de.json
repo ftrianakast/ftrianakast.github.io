@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "defaultDescription": "Staff Software Engineer, KI-Enthusiast und kolumbianischer Musiker in Berlin"
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "work": "Berufserfahrung",
+    "music": "Musik",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "title": "Felipe Triana Castañeda",
+    "subtitle": "Staff Software Engineer & Musiker",
+    "location": "Berlin, Deutschland",
+    "quickLinks": "Schnellzugriff",
+    "connect": "Verbinden"
+  },
+  "home": {
+    "title": "Felipe Triana Castañeda - Staff Software Engineer & Musiker",
+    "hero": {
+      "name": "Felipe Triana Castañeda",
+      "title": "Staff Software Engineer",
+      "tagline": "Verteilte Systeme mit KI entwickeln · Kolumbianische Musik spielen · In Berlin ansässig",
+      "viewWork": "Meine Arbeit ansehen",
+      "getInTouch": "Kontakt aufnehmen",
+      "downloadCV": "Lebenslauf herunterladen"
+    },
+    "highlights": {
+      "title": "Was ich mache",
+      "engineering": {
+        "title": "Software Engineering",
+        "description": "Entwicklung skalierbarer verteilter Systeme bei eBay, wobei KI-Tools für 75%+ meines Workflows eingesetzt werden. Experte in Java, Scala und Microservices-Architektur."
+      },
+      "ai": {
+        "title": "KI-Integration",
+        "description": "Spezialisiert auf LLM-Anwendungen, Prompt-Engineering und KI-gestützte Entwicklung. Nutze Claude, ChatGPT und GitHub Copilot zur Produktivitätssteigerung."
+      },
+      "music": {
+        "title": "Kolumbianische Musik",
+        "description": "Gründer von Cumbé, einer traditionellen Gaita-Musikgruppe aus den Montes de María in Berlin. Spiele Gaita und Perkussion, um das kolumbianische Erbe mit Berlins Musikszene zu verbinden."
+      }
+    },
+    "cta": {
+      "title": "Lass uns zusammenarbeiten",
+      "description": "Ich bin offen für Remote-Möglichkeiten beim Aufbau KI-integrierter Systeme und der Skalierung verteilter Architekturen.",
+      "button": "Kontakt aufnehmen"
+    }
+  },
+  "about": {
+    "title": "Über mich - Felipe Triana Castañeda",
+    "heading": "Über mich",
+    "journey": {
+      "title": "Der Weg",
+      "p1": "Ich bin Felipe Triana Castañeda, ein kolumbianischer Software-Ingenieur, der in Berlin ein Zuhause gefunden hat. Meine Reise in der Technologie begann in Bogotá, wo ich meinen Abschluss in System- und Computing-Engineering an der Universidad de los Andes mit einer Arbeit über KI-gestützte Hautkrankheitserkennung mit Ontologien erwarb.",
+      "p2": "In den letzten 12+ Jahren habe ich verteilte Systeme entwickelt, die Hunderte von Millionen Benutzern bei Unternehmen wie eBay, Zalando und Prodigious dienen. Was mich antreibt, ist die Schnittstelle von Skalierung, Architektur und Innovation—besonders jetzt, wo KI verändert, wie wir Software entwickeln.",
+      "p3": "Heute bin ich Staff Software Engineer bei eBay, wo ich technische Projekte vom Design bis zur Auslieferung leite und umfassend KI-Tools (Claude, ChatGPT, GitHub Copilot) für 75%+ meines täglichen Workflows nutze. Ich bin leidenschaftlich an funktionaler Programmierung, Systemskalierbarkeit und daran, KI in der Produktion zum Laufen zu bringen."
+    },
+    "beyond": {
+      "title": "Jenseits des Codes",
+      "p1": "Musik ist meine zweite Sprache. 2022 gründete ich <strong>Cumbé</strong>, ein traditionelles Gaita-Musikensemble aus den Montes de María in Berlin. Wir spielen Gaita (kolumbianische Flöte) und Perkussion und verbinden mein kolumbianisches Erbe mit Berlins vielfältiger Musikszene. Ich studiere auch Bandola Llanera, das Saiteninstrument aus den Östlichen Ebenen, das für Joropo verwendet wird."
+    },
+    "values": {
+      "title": "Was mir wichtig ist",
+      "learning": "<strong>Kontinuierliches Lernen</strong> - Von Quantencomputing-Workshops bis zu Finanzmärkten-Kursen",
+      "scale": "<strong>Für Skalierung entwickeln</strong> - Systeme, die Millionen dienen und wartbar bleiben",
+      "ai": "<strong>KI-Verstärkung</strong> - LLMs als Denkpartner nutzen, nicht nur Autovervollständigung",
+      "bridges": "<strong>Kulturelle Brücken</strong> - Kolumbianische Musik nach Berlin bringen, Berliner Engineering zu globalen Teams bringen",
+      "excellence": "<strong>Pragmatische Exzellenz</strong> - Funktionierende Lösungen liefern, dann zur Eleganz iterieren"
+    },
+    "currently": {
+      "title": "Aktuell",
+      "ebay": "Leite technische Projekte bei eBay (Reibungsreduzierung, Betrugsvermeidung, globales Messaging)",
+      "llm": "Erforsche LLM-Integrationsmuster und KI-gestützte Entwicklungs-Workflows",
+      "music": "Trete mit Cumbé auf und studiere Bandola und Musikharmonie",
+      "german": "Verbessere mein Deutsch (derzeit mittleres Niveau)",
+      "reading": "Lese über verteilte Systeme, Prompt-Engineering und Quantencomputing"
+    }
+  },
+  "work": {
+    "title": "Berufserfahrung - Felipe Triana Castañeda",
+    "heading": "Berufserfahrung",
+    "subtitle": "12+ Jahre Entwicklung verteilter Systeme im großen Maßstab",
+    "downloadCV": "Lebenslauf herunterladen",
+    "ebayStaff": {
+      "dates": "Mär 2022 - Heute",
+      "title": "Staff Software Engineer",
+      "company": "eBay · Berlin, Deutschland",
+      "responsibilities": [
+        "Leite die technische Verantwortung für Projekte vom Design bis zur Auslieferung für die globale eBay-Plattform, die Hunderte Millionen Benutzer bedient",
+        "Leitete internationale Initiativen zur Reibungsreduzierung, einschließlich Request Shipping, Educational Banner für Verkäufer, Freight Forwarding und Contact Seller-Funktionen",
+        "Diene als Domain-Lead für 6 geerbte AU-Anwendungen, verwalte SLOs, Produktionsfehler und Systemwartung",
+        "Nutze umfassend KI-Tools (Claude, ChatGPT, GitHub Copilot) für Code-Generierung, Architektur-Diskussionen und Code-Reviews (75%+ KI-gestützter Workflow)",
+        "Mentoriere Backend-Engineers in technischen Fähigkeiten und Best Practices"
+      ]
+    },
+    "ebaySenior": {
+      "dates": "Nov 2018 - Mär 2022",
+      "title": "Senior Software Engineer",
+      "company": "eBay · Berlin, Deutschland",
+      "responsibilities": [
+        "Leitete technisches Design und Implementierung des Betrugsvermeidungssystems für die Rewards-Plattform und schützte Millionen Benutzer in Europa",
+        "Co-leitete die Entwicklung des Rewards Admin Tool, ermöglichte skalierbares Kampagnen-Management für eBay Punkte, Verkäufer-Rewards und Käufer-Rewards-Programme",
+        "Entwickelte und wartete Microservices für die europäische Rewards-Plattform mit Scala und Java",
+        "Trug zu globalen eBay-Initiativen bei, einschließlich Zahlungen, Warenkorb und Checkout-Erfahrungen"
+      ]
+    },
+    "zalando": {
+      "dates": "Mai 2017 - Nov 2018",
+      "title": "Software Engineer",
+      "company": "Zalando · Berlin, Deutschland",
+      "responsibilities": [
+        "Backend-Engineer bei Collabary, einem schnell wachsenden Intrapreneur-Projekt",
+        "Entwarf pragmatische Systeme und Prozesse für schnelles Wachstum",
+        "Entwickelte Microservices mit Java 8, Spring Boot, NodeJS und ExpressJS",
+        "Stellte Services auf AWS-Infrastruktur mit Docker bereit"
+      ]
+    },
+    "prodigious": {
+      "dates": "Mär 2015 - Apr 2017",
+      "title": "Senior Software Engineer",
+      "company": "Prodigious Latin America · Bogotá, Kolumbien",
+      "responsibilities": [
+        "Backend-Engineer und technischer Referent für Hewlett Packard-, USANA- und Renault-Nissan-Projekte",
+        "Entwickelte Unternehmenslösungen mit Java, Adobe Experience Manager und Apache Sling",
+        "Arbeitete mit großen internationalen Teams in den USA und Lateinamerika zusammen"
+      ]
+    },
+    "aentropico": {
+      "dates": "Aug 2013 - Dez 2014",
+      "title": "CTO & Full Stack Developer",
+      "company": "Aentropico SAS · Bogotá, Kolumbien",
+      "responsibilities": [
+        "Technischer Leiter und Architekt für Predictive Analytics-Plattform mit Machine Learning",
+        "Entwickelte Backend-Systeme mit Scala, Akka, Spark, NodeJS und R",
+        "Entwarf REST-APIs, NoSQL-Datenbanken (MongoDB) und Frontend-Anwendungen",
+        "Verwaltete Infrastruktur auf AWS, Docker und Heroku mit OAuth 2.0-Sicherheit"
+      ]
+    },
+    "skills": {
+      "title": "Technische Fähigkeiten",
+      "ai": {
+        "title": "KI & ML",
+        "description": "LLM-Integration, Prompt-Engineering, KI-gestützte Entwicklung mit Claude, ChatGPT, GitHub Copilot"
+      },
+      "languages": {
+        "title": "Programmiersprachen",
+        "description": "Java (Experte), Scala (Experte), Kotlin, JavaScript, TypeScript"
+      },
+      "frameworks": {
+        "title": "Frameworks",
+        "description": "Spring Boot, ZIO, Scalaz, Vavr, NodeJS, ExpressJS"
+      },
+      "apis": {
+        "title": "APIs",
+        "description": "REST, GraphQL, SOAP"
+      },
+      "databases": {
+        "title": "Datenbanken",
+        "description": "Oracle, MongoDB, PostgreSQL, MySQL, Redis, NuDB"
+      },
+      "infrastructure": {
+        "title": "Infrastruktur",
+        "description": "Kubernetes, Docker, AWS, Kafka, ereignisgesteuerte Architekturen"
+      }
+    }
+  },
+  "music": {
+    "title": "Musik - Felipe Triana Castañeda",
+    "heading": "Musik",
+    "subtitle": "Verbindung des kolumbianischen Erbes mit Berlins Musikszene",
+    "cumbe": {
+      "title": "Cumbé",
+      "subtitle": "Kolumbianisches traditionelles Musikensemble · Berlin, Deutschland",
+      "description": "Gegründet 2022, ist Cumbé mein Leidenschaftsprojekt, das die reichen Klänge der traditionellen Gaita-Musik aus den Montes de María in Berlins vielfältige Kulturlandschaft bringt. Wir erforschen die Rhythmen und Melodien der kolumbianischen Karibikküste mit Gaita Hembra, Gaita Macho, Llamador, Tambor Alegre und Tambora."
+    },
+    "instruments": {
+      "gaita": {
+        "title": "Gaita",
+        "description": "Traditionelle kolumbianische Flöte aus den Küstenregionen. Ein wunderschönes Blasinstrument mit einer eindringlichen, melodischen Qualität, das zentral für Cumbia und andere kolumbianische Rhythmen ist."
+      },
+      "bandola": {
+        "title": "Bandola Llanera",
+        "description": "Saiteninstrument aus den Östlichen Ebenen (Llanos Orientales). Teil der Lautenfamilie, produziert es helle, resonante Töne, perfekt für Joropo. Studiere derzeit dieses schöne Instrument der Llanera-Musik."
+      },
+      "percussion": {
+        "title": "Perkussion",
+        "description": "Llamador, Tambor Alegre und Tambora sind fundamental für Gaita-Musik. Diese Trommeln afrikanischen Ursprungs geben den Rhythmus und die Energie für Cumbias, Porros und Puyas aus den Montes de María."
+      },
+      "harmony": {
+        "title": "Musikharmonie",
+        "description": "Studiere derzeit Musiktheorie und Harmonie, um mein Verständnis von Komposition, Arrangement und den theoretischen Grundlagen der traditionellen kolumbianischen Musik zu vertiefen."
+      }
+    },
+    "cta": {
+      "title": "Interesse an einer Zusammenarbeit?",
+      "description": "Ob Sie ein kulturelles Event organisieren, kolumbianische Musik in Berlin suchen oder einfach nur über Musik sprechen möchten, ich würde gerne von Ihnen hören.",
+      "button": "Kontakt aufnehmen"
+    }
+  },
+  "contact": {
+    "title": "Kontakt - Felipe Triana Castañeda",
+    "heading": "Lass uns verbinden",
+    "subtitle": "Ich bin immer offen für interessante Gespräche und Möglichkeiten",
+    "downloadCV": "Lebenslauf herunterladen",
+    "methods": {
+      "email": {
+        "title": "E-Mail",
+        "value": "ftrianakast@gmail.com",
+        "description": "Für allgemeine Anfragen und Möglichkeiten"
+      },
+      "github": {
+        "title": "GitHub",
+        "value": "@ftrianakast",
+        "description": "Schauen Sie sich meine Open-Source-Arbeit an"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "value": "@ftrianakast",
+        "description": "Berufliches Netzwerk und Updates"
+      },
+      "location": {
+        "title": "Standort",
+        "value": "Berlin, Deutschland",
+        "description": "Offen für Remote-Möglichkeiten weltweit"
+      }
+    },
+    "lookingFor": {
+      "title": "Wonach ich suche",
+      "remote": {
+        "title": "Remote-Möglichkeiten",
+        "description": "Staff/Principal Engineer-Rollen beim Aufbau KI-integrierter Systeme und verteilter Architekturen"
+      },
+      "discussions": {
+        "title": "Technische Diskussionen",
+        "description": "Architektur, KI/ML-Integration, funktionale Programmierung, Systemskalierung"
+      },
+      "speaking": {
+        "title": "Vorträge & Workshops",
+        "description": "Konferenzen, Meetups und Bildungsveranstaltungen über verteilte Systeme und KI"
+      },
+      "collaborations": {
+        "title": "Musik-Kollaborationen",
+        "description": "Kolumbianische Musikveranstaltungen, Kulturaustausch und Aufführungen in Berlin"
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog - Felipe Triana Castañeda",
+    "heading": "Blog",
+    "subtitle": "Gedanken über KI, verteilte Systeme, funktionale Programmierung und traditionelle kolumbianische Musik",
+    "readMore": "Mehr lesen",
+    "noPosts": "Noch keine Beiträge.",
+    "comments": "Kommentare"
+  }
+}

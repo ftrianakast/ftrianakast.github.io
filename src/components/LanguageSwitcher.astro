@@ -1,0 +1,56 @@
+---
+import { languages, getLangFromUrl, getLocalizedPath } from '../i18n';
+
+const currentLang = getLangFromUrl(Astro.url);
+const currentPath = Astro.url.pathname.replace(new RegExp(`^/(${Object.keys(languages).join('|')})`), '') || '/';
+---
+
+<div class="language-switcher flex items-center gap-2">
+  {Object.keys(languages).map((lang, index) => (
+    <>
+      <a
+        href={getLocalizedPath(currentPath, lang)}
+        class:list={[
+          'lang-link font-macondo text-sm transition-all',
+          currentLang === lang ? 'active' : ''
+        ]}
+        data-lang={lang}
+        style={currentLang === lang
+          ? 'color: var(--color-gold); border-bottom: 2px solid var(--color-gold); font-weight: 600;'
+          : 'color: var(--color-ink-light);'}
+      >
+        {lang.toUpperCase()}
+      </a>
+      {index < Object.keys(languages).length - 1 && (
+        <span style="color: var(--color-ink-light);">|</span>
+      )}
+    </>
+  ))}
+</div>
+
+<style>
+  .lang-link {
+    padding-bottom: 2px;
+    text-decoration: none;
+  }
+
+  .lang-link:not(.active):hover {
+    color: var(--color-gold) !important;
+    border-bottom: 2px solid var(--color-gold);
+  }
+</style>
+
+<script>
+  const langLinks = document.querySelectorAll('.lang-link');
+
+  langLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const target = e.currentTarget as HTMLAnchorElement;
+      const lang = target.dataset.lang;
+
+      if (lang) {
+        localStorage.setItem('preferredLanguage', lang);
+      }
+    });
+  });
+</script>
