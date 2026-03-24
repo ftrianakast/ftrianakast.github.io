@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { t } from '../../i18n';
+
+const currentLang = 'de';
+
+const posts = [
+  {
+    title: 'Mein Dorf vergisst mich nicht',
+    description: 'Reflexionen über traditionelle kolumbianische Musik und ihre Wurzeln in den Montes de María, den Östlichen Ebenen und darüber hinaus.',
+    pubDate: new Date('2026-02-10'),
+    url: 'https://felipetriana.substack.com/p/mi-aldea-no-me-olvida',
+  },
+];
+---
+
+<BaseLayout title={t(currentLang, 'blog.title')}>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h1 class="font-macondo text-4xl mb-4" style="color: var(--color-ink);">{t(currentLang, 'blog.heading')}</h1>
+    <p class="mb-2" style="color: var(--color-ink-light);">{t(currentLang, 'blog.subtitle')}</p>
+    <p class="text-sm mb-12" style="color: var(--color-ink-light);">
+      Veröffentlicht auf <a href="https://felipetriana.substack.com" target="_blank" rel="noopener noreferrer" class="hover:text-[--color-gold] transition-colors" style="color: var(--color-gold);">Substack</a>.
+    </p>
+
+    {posts.length === 0 ? (
+      <p style="color: var(--color-ink-light);">{t(currentLang, 'blog.noPosts')}</p>
+    ) : (
+      <ul class="space-y-10">
+        {posts.map(post => (
+          <li class="border-b pb-10" style="border-color: var(--color-gold-faded);">
+            <p class="text-sm mb-2 font-macondo" style="color: var(--color-ink-light);">
+              {post.pubDate.toLocaleDateString('de-DE', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+            <h2 class="font-macondo text-2xl mb-2" style="color: var(--color-ink);">
+              <a href={post.url} target="_blank" rel="noopener noreferrer" class="hover:text-[--color-gold] transition-colors">
+                {post.title}
+              </a>
+            </h2>
+            <p class="mb-4" style="color: var(--color-ink-light);">{post.description}</p>
+            <a href={post.url} target="_blank" rel="noopener noreferrer" class="text-sm font-macondo hover:text-[--color-gold] transition-colors" style="color: var(--color-gold);">
+              {t(currentLang, 'blog.readMore')} →
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+</BaseLayout>

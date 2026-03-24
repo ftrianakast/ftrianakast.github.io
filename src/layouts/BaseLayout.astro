@@ -44,7 +44,7 @@ const { title, description = t(currentLang, 'meta.defaultDescription') } = Astro
           <a href={getLocalizedPath('/about', currentLang)} class="font-macondo hover:text-[--color-gold] transition-colors" style="color: var(--color-ink-light);">{t(currentLang, 'nav.about')}</a>
           <a href={getLocalizedPath('/work', currentLang)} class="font-macondo hover:text-[--color-gold] transition-colors" style="color: var(--color-ink-light);">{t(currentLang, 'nav.work')}</a>
           <a href={getLocalizedPath('/music', currentLang)} class="font-macondo hover:text-[--color-gold] transition-colors" style="color: var(--color-ink-light);">{t(currentLang, 'nav.music')}</a>
-          <a href="https://felipetriana.substack.com" target="_blank" rel="noopener noreferrer" class="font-macondo hover:text-[--color-gold] transition-colors" style="color: var(--color-ink-light);">{t(currentLang, 'nav.blog')}</a>
+          <a href={getLocalizedPath('/blog', currentLang)} class="font-macondo hover:text-[--color-gold] transition-colors" style="color: var(--color-ink-light);">{t(currentLang, 'nav.blog')}</a>
           <a href={getLocalizedPath('/contact', currentLang)} class="font-macondo hover:text-[--color-gold] transition-colors" style="color: var(--color-ink-light);">{t(currentLang, 'nav.contact')}</a>
         </div>
 
@@ -65,7 +65,7 @@ const { title, description = t(currentLang, 'meta.defaultDescription') } = Astro
         <a href={getLocalizedPath('/about', currentLang)} class="block py-2 font-macondo hover:text-[--color-gold]" style="color: var(--color-ink-light);">{t(currentLang, 'nav.about')}</a>
         <a href={getLocalizedPath('/work', currentLang)} class="block py-2 font-macondo hover:text-[--color-gold]" style="color: var(--color-ink-light);">{t(currentLang, 'nav.work')}</a>
         <a href={getLocalizedPath('/music', currentLang)} class="block py-2 font-macondo hover:text-[--color-gold]" style="color: var(--color-ink-light);">{t(currentLang, 'nav.music')}</a>
-        <a href="https://felipetriana.substack.com" target="_blank" rel="noopener noreferrer" class="block py-2 font-macondo hover:text-[--color-gold]" style="color: var(--color-ink-light);">{t(currentLang, 'nav.blog')}</a>
+        <a href={getLocalizedPath('/blog', currentLang)} class="block py-2 font-macondo hover:text-[--color-gold]" style="color: var(--color-ink-light);">{t(currentLang, 'nav.blog')}</a>
         <a href={getLocalizedPath('/contact', currentLang)} class="block py-2 font-macondo hover:text-[--color-gold]" style="color: var(--color-ink-light);">{t(currentLang, 'nav.contact')}</a>
       </div>
     </div>
@@ -88,7 +88,7 @@ const { title, description = t(currentLang, 'meta.defaultDescription') } = Astro
           <div class="flex flex-col space-y-2 text-sm">
             <a href={getLocalizedPath('/about', currentLang)} class="hover:text-[--color-gold] transition-colors">{t(currentLang, 'nav.about')}</a>
             <a href={getLocalizedPath('/work', currentLang)} class="hover:text-[--color-gold] transition-colors">{t(currentLang, 'nav.work')}</a>
-            <a href="https://felipetriana.substack.com" target="_blank" rel="noopener noreferrer" class="hover:text-[--color-gold] transition-colors">{t(currentLang, 'nav.blog')}</a>
+            <a href={getLocalizedPath('/blog', currentLang)} class="hover:text-[--color-gold] transition-colors">{t(currentLang, 'nav.blog')}</a>
           </div>
         </div>
         <div>
